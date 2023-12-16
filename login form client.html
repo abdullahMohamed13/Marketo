@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/login form client.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+  <title>Registration Form </title>
+  
+  <link rel="stylesheet" href="ex4.css" />
+</head>
+<body>
+  <header> 
+      <nav>
+          <a href="index.html" class="logo">
+              <img src="images/Our_Logo.jpg" alt="">
+          </a>
+          <ul class="main-nav" id="main-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./ex4.html" target="_blank">Login</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="#dashboard">Dashboard</a></li>
+              <li><a href="#bucket"><i class="fas fa-shopping-basket"></i></a></li>
+          </ul>
+      </nav>
+  </header>
+  <section class="container">
+  <h1>Registration as a client</h1>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" required />
+      </div>
+
+      <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" placeholder="Enter email address" required />
+      </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="number" placeholder="Enter your phone number" required />
+        </div>
+        <div class="input-box">
+          <label>Birth Date</label>
+          <input type="date" placeholder="Enter birth date" required />
+        </div>
+      </div>
+      <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" id="check-male" name="gender" checked />
+            <label for="check-male">male</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-female" name="gender" />
+            <label for="check-female">Female</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-other" name="gender" />
+            <label for="check-other">prefer not to say</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-box address">
+        <label>Address</label>
+        <input type="text" placeholder="Enter your street address" required />
+        <input type="text" placeholder="Enter your supermarket location" required />
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>Government</option>
+              <option>Cairo</option>
+              <option>Alex</option>
+              <option>Giza</option>
+              <option>6 october city</option>
+            </select>
+          </div>
+          <input type="number" placeholder="Enter your deliveries number" min="2" required />
+        </div>
+        <div class="column">
+          
+          <input type="text" placeholder="Enter postal code" required />
+        </div>
+      </div>
+      <button>Next</button>
+    </form>
+  </section>
+</body>
+</html>
