@@ -12,8 +12,8 @@ body {
     box-sizing: border-box;
 }
 .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -501,6 +501,139 @@ header .main-nav > li > a:hover::before {
     font-size: 18px;
 }
 /* End Team-members */
+/* Start plans Plans */
+
+/* Start plans */
+.plans {
+    /* background-color: var(--sections-backColor); */
+    position: relative;
+}
+.plans .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 30px;
+    direction: rtl;
+}
+.plans .box {
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+.plans .box::before,
+.plans .box::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 50%;
+    background-color: #cccccc30;
+    z-index: -1;
+    transition: var(--transtion-du);
+}
+.plans .box::before {
+    left: 0;
+    top: 0;
+}
+.plans .box::after {
+    right: 0;
+    bottom: 0;
+}
+.plans .box:hover::before,
+.plans .box:hover::after {
+    width: 100%;
+}
+@media (width > 1200px) {
+    .plans .box:nth-of-type(2) {
+        transform: translateY(-15px);
+    }
+}
+.plans .box .pop {
+    position: absolute;
+    right: 20px;
+    writing-mode: vertical-rl;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 10px 40px;
+    overflow: hidden;
+    transition: var(--transtion-du);
+}
+.plans .box:hover .pop {
+    padding: 10px 10px 30px;
+}
+.plans .box .pop::after {
+    content: '';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    transition: var(--transtion-du);
+}
+.plans .box h3 {
+    margin: 20px 0;
+    font-size: 22px;
+}
+.plans .box p {
+    color: var(--main-color);
+    font-size: 48px;
+    line-height: 0.7;
+    font-weight: bold;
+}
+.plans .box p span {
+    color: #777777cb;
+    font-size: 20px;
+    font-weight: normal;
+}
+.plans .box ul {
+    text-align: left;
+    margin-left: 25px;
+}
+.plans .box ul li {
+    margin: 20px 0;
+    padding-top: 20px;
+    position: relative;
+    font-size: 20px;
+    width: 100%;
+}
+.plans .box ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    padding-left: 10px;
+    color: var(--main-color);
+}
+.plans .box ul li::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 25px);
+    height: 1px;
+    left: -25px;
+    top: 0;
+    background-color: #dfdfdf;
+}
+.plans .box a {
+    padding: 20px;
+    width: fit-content;
+    display: block;
+    margin: 40px auto 20px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 22px;
+    border: 3px solid var(--main-color);
+    border-radius: 10px;
+    transition: var(--transtion-du);
+}
+.plans .box a:hover {
+    color: white;
+    border-color: white;
+    background-color: var(--main-color);
+}
+/* End plans Plans */
 /* Start Animation */
 @keyframes up-n-down {
     from {
