@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Our Logo -->
     <link rel="icon" href="images/Our_Logo.jpg" type="image/x-icon">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.min.css">
@@ -31,13 +32,18 @@
             <ul class="main-nav" id="main-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="product.html">product</a></li>
-                <li><a href="login form client.html">Login</a></li>
+                <li class="drop-menu">
+                    <a href="#">Login</a>
+                    <!-- Start Drop Down -->
+                    <ul class="drop-down">
+                        <li><a href="">Customer</a></li>
+                        <li><a href="login form client.html">Client</a></li>
+                    </ul>
+                    <!-- End Drop Down -->
+                </li>
                 <li><a href="plans.html">Plans</a></li>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#bucket"><i class="fa-solid fa-basket-shopping"></i></a></li>
-                <div id="icon" class="icon">
-                    <!-- <i class="fa-regular fa-moon"></i> -->
-                </div>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#bucket" style="opacity: 0.5;"><i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </div>
     </header>
@@ -427,5 +433,6 @@
         </div>
     </footer>
     <script src="js/home.js"></script>
+    <script src="js/drop-down.js"></script>
 </body>
 </html>

@@ -1,0 +1,191 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/Our_Logo.jpg" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Our Logo -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Normalize Library -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Main css work -->
+        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+        <title>Marketo Product Selection</title>
+    </head>
+        
+    <body>
+        <!-- Start Header -->
+        <header>
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="images/Our_Logo.jpg" alt="">
+                </a>
+                <ul class="main-nav" id="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">product</a></li>
+                    <li class="drop-menu">
+                        <a href="#">Login</a>
+                        <!-- Start Drop Down -->
+                        <ul class="drop-down">
+                            <li><a href="">Customer</a></li>
+                            <li><a href="login form client.html">Client</a></li>
+                        </ul>
+                        <!-- End Drop Down -->
+                    </li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#bucket" style="opacity: 0.5;"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- End Header -->
+
+    <h1> Product Selection</h1>
+        
+    <form action="/submit" method="post">
+        
+        <!-- Meat Section -->
+        <section class="product-section" id="meat-section">
+            <h2>Meat and <br>Seafood</h2>
+            <label>
+                <input type="checkbox" name="meat[]" value="beef"> Beef
+            </label>
+            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="meat[]" value="chicken"> Chicken
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="meat[]" value="pork"> Salmon
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="meat[]" value="pork"> Shrimp
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="meat[]" value="pork"> Fish
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+        </section>
+        
+        <!-- Dairy Section -->
+        <section class="product-section" id="dairy-section">
+            <h2> The Dairy <br>Products</h2>
+            <label>
+                <input type="checkbox" name="dairy[]" value="milk"> Milk
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="dairy[]" value="cheese"> Cheese
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="dairy[]" value="yogurt"> Yogurt
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="dairy[]" value="butter"> Butter
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="dairy[]" value="eggs"> Eggs
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+        </section>
+        
+        <!-- Beverages Section -->
+        <section class="product-section" id="beverages-section">
+            <h2>Beverages <br>products</h2>
+            <label>
+                <input type="checkbox" name="beverages[]" value="water"> Water Bottles
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="beverages[]" value="coffee"> Coffee
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="beverages[]" value="tea"> Tea Bags
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="beverages[]" value="soft_drinks"> Soft Drinks
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="beverages[]" value="fruit_juice"> Fruit Juice
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+        </section>
+        
+        <!-- Vegetables Section -->
+        <section class="product-section" id="vegetables-section">
+            <h2>Vegetables <br>Products</h2>
+            <label>
+                <input type="checkbox" name="vegetables[]" value="carrot"> Carrot
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="vegetables[]" value="broccoli"> Broccoli
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="vegetables[]" value="spinach"> Spinach
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="vegetables[]" value="lettuce"> Lettuce
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="vegetables[]" value="bell_peppers"> Avocado
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+        </section>
+        
+        <!-- Dry Groceries Section -->
+        <section class="product-section" id="groceries-section">
+            <h2>Dry Groceries <br>Products</h2>
+            <label>
+                <input type="checkbox" name="groceries[]" value="rice"> Rice
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="groceries[]" value="pasta"> Pasta
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="groceries[]" value="cereal"> Cereal
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="groceries[]" value="flour"> Flour
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="groceries[]" value="lentils"> Lentils
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+        </section>
+        
+        <!-- Legumes Section -->
+        <section class="product-section" id="legumes-section">
+            <h2>Legumes<br> Products</h2>
+            <label>
+                <input type="checkbox" name="legumes[]" value="beans"> Beans
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="legumes[]" value="lentils"> Lentils
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="legumes[]" value="peas"> Peas
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="legumes[]" value="chickpeas"> Chickpeas
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+            <label>
+                <input type="checkbox" name="legumes[]" value="black_beans"> Black Beans
+            </label>            <label><input type="number" name="beans_quantity" placeholder="Enter quantity" min="1" class="quantity-input"></label>
+        </section>
+        
+        <button type="submit"><b>Done</b> </button>
+        
+    </form>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var sections = document.querySelectorAll('.product-section');
+        
+        sections.forEach(function (section) {
+            section.addEventListener('mouseover', function () {
+                document.body.classList.add('blur');
+            });
+            
+            section.addEventListener('mouseout', function () {
+                document.body.classList.remove('blur');
+            });
+        });
+    });
+</script>
+<script src="js/drop-down.js"></script>
+</body>
+</html>

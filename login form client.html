@@ -18,10 +18,18 @@
           <ul class="main-nav" id="main-nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="product.html">Products</a></li>
-              <li><a href="login form client.html" target="_blank">Login</a></li>
+              <li class="drop-menu">
+                <a href="#">Login</a>
+                <!-- Start Drop Down -->
+                <ul class="drop-down">
+                    <li><a href="">Customer</a></li>
+                    <li><a href="#" style="cursor: not-allowed; opacity: 0.6;">Client</a></li>
+                </ul>
+                <!-- End Drop Down -->
+            </li>
               <li><a href="plans.html">Plans</a></li>
-              <li><a href="#dashboard">Dashboard</a></li>
-              <li><a href="#bucket"><i class="fas fa-shopping-basket"></i></a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="#bucket" style="opacity: 0.5;"><i class="fas fa-shopping-basket"></i></a></li>
           </ul>
       </nav>
   </header>
@@ -89,5 +97,6 @@
       <button>Next</button>
     </form>
   </section>
+  <script src="js/drop-down.js"></script>
 </body>
 </html>

@@ -40,7 +40,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  
 }
 h2{
   margin-bottom: 70px;
@@ -51,9 +50,8 @@ header {
   -moz-box-shadow: 0 0 10px #c5c1c1;
   box-shadow: 0 0 10px #c5c1c1;
   background-color: #ffffff;
-  position: fixed;
   top: 0; 
-  width:100%;
+  width: 100%;
   height: 75px;
   z-index: 1000; 
   padding-left: 90px;
@@ -91,6 +89,36 @@ header .main-nav {
   margin-left: auto;
 }
 
+/* Start Drop-down */
+header .main-nav .drop-down {
+  position: absolute;
+  z-index: 9999;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s;
+  padding: 5px 30px;
+  background-color: white;
+}
+header .main-nav .drop-down li a {
+  padding: 5px;
+  font-size: 18px;
+  color: black;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+}
+header .main-nav .drop-down li a:hover {
+  color: var(--main-color);
+  background-color: #fafafa;
+}
+/* End Drop-down */
+header .main-nav > li {
+  display: block;
+  position: relative;
+}
 header .main-nav > li > a {
   display: flex;
   justify-content: center;
@@ -103,7 +131,6 @@ header .main-nav > li > a {
   font-size: 18px;
   transition: 0.4s;
 }
-
 header .main-nav > li > a:hover {
   color: #43b182;
   background-color: #fafafa;
@@ -119,7 +146,6 @@ header .main-nav > li > a::before {
   left: -100%;
   transition: 0.4s;
 }
-
 header .main-nav > li > a:hover::before {
   left: 0;
 }
@@ -138,7 +164,7 @@ a {
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  margin: calc(75px + 30px) 0 40px;
+  margin: 40px 0;
 }
 .form .input-box {
   width: 100%;

@@ -38,9 +38,17 @@
       <ul class="main-nav" id="main-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="product.html">product</a></li>
-          <li><a href="login form client.html">Login</a></li>
-          <li><a href="plans.html">Plans</a></li>
-          <li><a href="#dashboard">Dashboard</a></li>
+          <li class="drop-menu">
+            <a href="#">Login</a>
+            <!-- Start Drop Down -->
+            <ul class="drop-down">
+                <li><a href="">Customer</a></li>
+                <li><a href="login form client.html">Client</a></li>
+            </ul>
+            <!-- End Drop Down -->
+        </li>
+        <li><a href="plans.html">Plans</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
           <li>
           <div class="cart-btn">
             <i id="cart" class="fa-solid fa-basket-shopping"></i>
@@ -97,12 +105,6 @@
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price"><br><br>$ 270</span>
       </div>
-      <!-- <div class="card-5 card">
-        <img class="product-image" src="images/Products/coffee.jpg" alt="">
-        <h3>coffee</h3>
-        <button class="add-to-cart">Add to cart</button>
-        <span class="product-price">LE1230</span>
-      </div> -->
     </div> 
     
     <div class="items-container">
@@ -130,12 +132,6 @@
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price"><br><br>$ 270</span>
       </div>
-      <!-- <div class="card-5 card">
-        <img class="product-image" src="images/Products/coffee.jpg" alt="">
-        <h3>coffee</h3>
-        <button class="add-to-cart">Add to cart</button>
-        <span class="product-price">LE1230</span>
-      </div> -->
     </div> 
     
     <div class="items-container">
@@ -163,12 +159,6 @@
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price"><br><br>$ 270</span>
       </div>
-      <!-- <div class="card-5 card">
-        <img class="product-image" src="images/Products/coffee.jpg" alt="">
-        <h3>coffee</h3>
-        <button class="add-to-cart">Add to cart</button>
-        <span class="product-price">LE1230</span>
-      </div> -->
     </div> 
     
     <div class="items-container">
@@ -196,15 +186,10 @@
         <button class="add-to-cart">Add to cart</button>
         <span class="product-price"><br><br>$ 270</span>
       </div>
-      <!-- <div class="card-5 card">
-        <img class="product-image" src="images/Products/coffee.jpg" alt="">
-        <h3>coffee</h3>
-        <button class="add-to-cart">Add to cart</button>
-        <span class="product-price">LE1230</span>
-      </div> -->
     </div> 
   </main>
   </div>
 <script  src="js/script.js"></script>
+<script src="js/drop-down.js"></script>
 </body>
 </html>
