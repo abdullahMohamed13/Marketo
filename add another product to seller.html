@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="karas nasser,kerolos wagdy,emad alaa,abdalla mohamed">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Marketo</title>
+    <!-- Our Logo -->
+    <link rel="icon" href="images/Our_Logo.jpg" type="image/x-icon">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,800&display=swap');
+        *{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+       
+        body {
+            background:linear-gradient(to right,#20543e,#43b182,#b2e0c3);
+            font-size: medium;
+            color: #091F15;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }   
+
+        form {
+            border-radius: 50px;
+            border: 10px solid transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);    
+            width: 1380px;
+            height: 620px;
+            background-color: white; 
+            padding: 50px; 
+            position: relative;
+            gap: 10px; 
+         }
+
+        h2{
+            position: absolute;
+            left: 40%;
+            top: 5%;
+            font-style:oblique; 
+        }
+        
+        p{
+            position: absolute;
+            left: 13%;
+            top: 15%;
+            
+        }
+        
+        h4 {
+                display:contents;
+        }
+        
+        h6 {
+            position:relative;
+            top:60%;
+            left:25%;
+        }
+         
+        div {
+                position: relative;
+                top: 40px;
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-content:center;
+                justify-content: center;
+                align-items: center;
+                margin: 6px;
+            }
+
+        .me{
+                position: relative;
+                left: 4%;
+            }
+        .gr {
+            
+                position: relative;
+               left: 11%;
+            }
+        
+
+        .po, .di {
+            position: relative;
+                right: 3%;
+        }
+
+        .mp{
+            height: 130px;
+            width: 95px;
+            display: block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+            border: 2px solid  #45b881; 
+            cursor: pointer;
+            border-radius: 20px;
+            gap: 10px;
+        } 
+
+        input[type ="checkbox"]{
+            position:relative;
+            width: 110%;
+            right: 37%;
+        }
+
+        img{
+            width: 90%;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 3%;
+            cursor: pointer; 
+        }
+       
+        a {
+            position: relative;
+            cursor: pointer;
+            top: 25%;
+            left: 25%;
+            content: "\f217";
+            font-size: 40px;
+       }
+        .bn31 {
+                background-image: linear-gradient(to right, #20543e 0%, #00a950 100%);
+                border-radius: 40px;
+                box-sizing: border-box;
+                color: #00a84f;
+                display: block;
+                height: 50px;
+                font-size: 1.4em;
+                padding: 4px;
+                position: relative;
+                text-decoration: none;
+                width: 7em;
+                z-index: 2;
+                position:absolute;
+                top: 92%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
+
+                .bn31:hover {
+                color: #fff;
+                }
+
+                .bn31 .bn31span {
+                align-items: center;
+                background: #0e0e10;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                transition: background 0.5s ease;
+                width: 100%;
+                }
+
+                .bn31:hover .bn31span {
+                background: transparent;
+                }
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: white;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #43b182;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #bde0ca;
+    }
+    ::selection {
+        background-color: #43b182;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>choose the products</h2> 
+    <p>The seller must choose his available products from these options and If you want to add another product, click on cart :</p>
+    <div class="di">
+            <h4>Dairy products</h4>
+
+            <div class="mp">
+                <input id="identchoose" type="checkbox" value="Egg" name="products">
+                <label for="identchoose"><img src="products/بيض.jpg" alt="egg"></label>
+                <h6>egg</h6>
+            </div>
+        
+            <div class="mp">
+                <input id="identchoose" type="checkbox" value="Yogurt" name="products">
+                <label for="identchoose"><img src="products/زبادي.jpg" alt="Yogurt"></label>
+                <h6>Yogurt</h6>
+            </div>
+               
+            <div class="mp">
+            <input id="identchoose" type="checkbox" value="milk" name="products">
+            <label for="identchoose"><img src="products/لبن.jpg" alt="milk"></label>
+            <h6>milk</h6>
+            </div>
+
+             <div class="mp">
+            <input id="identchoose" type="checkbox" value="Cheese" name="products">
+            <label for="identchoose"><img src="products/جبنة.jpg" alt="Cheese"></label>
+            <h6>Cheese</h6>
+            </div>    
+            <div class="mp">
+            <a  href="add_another_product.html"><i class="fa-solid fa-cart-plus" style="color: #43b182;"></i></a> 
+            </div>
+        </div>
+
+     <div class="me">
+        <h4>Meat products</h4>
+
+        <div class="mp">
+        <input id="identchoose" type="checkbox" value="Beef" name="products">
+        <label for="identchoose"><img src="products/لحم.jpg" alt="Beef"></label>
+        <h6>Beef</h6>
+        </div>
+               
+        <div class="mp">
+        <input id="identchoose" type="checkbox" value="Burger" name="products">
+        <label for="identchoose"><img src="products/برجر.jpg" alt="kanduze"></label>
+        <h6>Burger</h6>
+        </div>
+
+        <div class="mp">
+        <input id="identchoose" type="checkbox" value="sausage" name="products">
+        <label for="identchoose"><img src="products/سوسيس.jpg" alt="sausage  meat"></label>
+        <h6>sausage</h6>
+        </div>
+        <div class="mp">
+            <a href="add_another_product.html"><i class="fa-solid fa-cart-plus" style="color: #43b182;"></i></a> 
+            </div>
+     </div>
+    <div class="po">
+        <h4>Poultry products<h4>
+        
+            <div class="mp">
+            <input id="identchoose" type="checkbox" value="chicken" name="products">
+            <label for="identchoose"><img src="products/فراخ.jpg" alt="chicken"></label>
+            <h6>chicken</h6>
+            </div>
+                   
+            <div class="mp">
+            <input id="identchoose" type="checkbox" value="chicken fillet" name="products">
+            <label for="identchoose"><img src="products/صدور الفراخ.jpg" alt="chicken fillet"></label>
+            <h6>chic fillet</h6>
+            </div>
+            
+            <div class="mp">
+            <input id="identchoose" type="checkbox" value="turkey" name="products">
+            <label for="identchoose"><img src="products/ديك رومي.jpg" alt="turkey"></label>
+            <h6>turkey</h6>
+            </div>
+            <div class="mp">
+            <a href="add_another_product.html"><i class="fa-solid fa-cart-plus" style="color: #43b182;"></i></a> 
+            </div>
+    </div>
+       
+    <div class="gr">
+        <h4>Grain products<h4>
+
+            <div class="mp">
+            <input id="identchoose" type="checkbox" value="Rice" name="products">
+            <label for="identchoose"><img src="products/ارز-المعمورةه-5-كجم.jpg" alt="Rice"></label>
+            <h6>Rice</h6>
+            </div>
+                       
+            <div class="mp">
+            <input id="identchoose" type="checkbox" value="popcorn" name="products">
+            <label for="identchoose"><img src="products/شوفان.jpg" alt="popcorn"></label>
+            <h6>oats</h6>
+            </div>
+                       
+            <div class="mp">
+            <input id="identchoose" type="checkbox" value="pasta" name="products">
+            <label for="identchoose"><img src="products/مكرونة.jpg" alt="pasta"></label>
+            <h6>pasta</h6>
+            </div>
+            <div class="mp">
+            <a href="add_another_product.html"><i class="fa-solid fa-cart-plus" style="color: #43b182;"></i></a> 
+            </div>
+    </div>
+        <a class="bn31" href="index.html"><span class="bn31span">submit</span></a>
+    </form>
+</body>
+</html>

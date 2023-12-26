@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+    <title>Marketo Registration</title>
+    <!-- Our Logo -->
+    <link rel="icon" href="images/Our_Logo.jpg" type="image/x-icon">
+    <meta name="author" content="karas nasser,kerolos wagdy,emad alaa,abdalla mohamed, abdelaziz waleed">
+    <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,800&display=swap');
+                 *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: "Poppins", sans-serif;
+            }
+            
+        body {
+            background:linear-gradient(to right,#20543e,#43b182,#b2e0c3);
+            font-size: medium;
+            color: #091F15;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }   
+
+        form {
+            border-radius: 50px;
+            border: 10px solid transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);     
+            width: 550px;
+            height: 690px;
+            background-color: white; 
+            padding: 15px; 
+            position: relative;
+            gap: 10px;
+        }
+            h2{
+                text-align: center;
+                font-weight:bold;
+                color: #091F15;
+                font-style: italic; 
+            }
+
+            input{
+                backdrop-filter: blur(8px); 
+                background-color: rgba(255, 255, 255, 0.5); 
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+                border:none;
+                margin:7px 0;
+                padding: 10px 15px;
+                font-size: 14px;
+                border-radius: 50px;
+                width: 100%;
+                outline: none;
+            }
+            select{
+                text-align: center;
+                backdrop-filter: blur(-2px); 
+                background-color: rgba(255, 255, 255, 0.3); 
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                padding: 5px 10px;
+                margin:3px 0;
+            }
+            
+            .bn31 {
+                background-image: linear-gradient(to right, #20543e 0%, #00a950 100%);
+                border-radius: 40px;
+                box-sizing: border-box;
+                color: #00a84f;
+                display: block;
+                height: 50px;
+                font-size: 1.4em;
+                padding: 4px;
+                position: relative;
+                text-decoration: none;
+                width: 7em;
+                z-index: 2;
+                position:absolute;
+                top: 94%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                }
+
+                .bn31:hover {
+                color: #fff;
+                }
+
+                .bn31 .bn31span {
+                align-items: center;
+                background: #0e0e10;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                transition: background 0.5s ease;
+                width: 100%;
+                }
+
+                .bn31:hover .bn31span {
+                background: transparent;
+                }
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: white;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #43b182;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #bde0ca;
+        }
+        ::selection {
+            background-color: #43b182;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+            <h2>Sign up for customers</h2>
+            <div>     
+             <input  type="text" placeholder="First name"  required>
+             <input  type="text" placeholder="Last name"required>
+        </div>
+        <div class="input-box">
+             <input  type="email" placeholder="E_mail" required>
+        </div>
+        <div class="">     
+        <label for="password"></label>
+             <input id="password" type="password" placeholder="Password" required>
+             <input id="Cpassword" type="password" placeholder="Confirm Password" required>
+        </div>
+        <div>
+            <input id="ph" type="tel" placeholder="Phone Number" required>
+        </div>
+        <div>
+            <label for="DOB">
+                <p>Date of Birth</p>
+            </label>
+            <input id="DOB" type="date" required>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+                <select id="gender" name="Gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+        </div>
+        <div>
+            <label for="city">City</label>
+                <select id="city" name="city">
+                    <option value="c">cairo</option>
+                    <option value="g">Giza</option>
+                    <option value="a">Alexandria</option>
+                </select>
+        </div>
+        <div>
+            <label for="add"></label>
+            <input id="add" type="text" placeholder="Adress details" required>
+        </div>
+        
+        <br><a class="bn31" href="index.html"><span class="bn31span">Submit</span></a>
+    </form>
+</body>
+</html>

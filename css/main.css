@@ -172,7 +172,7 @@ header {
     -webkit-box-shadow: 0 0 10px #ccc;
     -moz-box-shadow: 0 0 10px #ccc;
     box-shadow: 0 0 10px #ccc;
-    height: var(--header-height);
+    height: calc(var(--header-height) + 3px);
 }
 header .container {
     display: flex;
@@ -328,13 +328,13 @@ header .main-nav > li > a:hover::before {
     width: 100%;
 }
 .table table thead {
+    justify-content: center;
     text-align: center;
 }
 .table table td {
     border: 1px solid #eee;
     transition: var(--transtion-du);
     padding: 20px;
-    margin: 10px;
 }
 .table table td img {
     height: 70px;
